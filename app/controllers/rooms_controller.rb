@@ -8,6 +8,10 @@ before_action :set_room, only: %i[show]
 
   end
 
+  def new
+    @room = Room.new
+  end
+  
   private
 
   def set_room
