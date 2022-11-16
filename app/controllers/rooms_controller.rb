@@ -9,7 +9,7 @@ before_action :set_room, only: %i[show]
   end
 
   def new
-    @room = Room.new
+    @room = Room.new(room_params)
   end
   
   private
